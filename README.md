@@ -28,3 +28,18 @@ Test: Download Angular-CLI globally without using sudo.
 ```sh
 npm i @angular/cli
 ```
+
+### Troubleshoots
+If you try to run ng serve on an application without the local install of the CLI (global install only), you will get the following error.
+```
+You have to be inside an Angular CLI project in order to use the serve command.
+```
+Solution:
+Make sure you are inside your project base folder
+
+```sh
+$ ng --version
+$ npm install --save-dev @angular/cli@latest
+$ ng --version
+```
+
